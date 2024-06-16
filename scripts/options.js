@@ -40,7 +40,7 @@ function createAndFillTable() {
 }
 
 function fetchData() {
-    $("#stockTable").empty();
+    $("#stockTableBody").empty();
     const selectedSource = $('#dataSource').val();
     fetch(selectedSource)
         .then((response) => response.text())
