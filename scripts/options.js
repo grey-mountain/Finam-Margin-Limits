@@ -107,5 +107,4 @@ $('#dataSource').on('change', fetchData);
 
 $('#searchInput, #instrumentType, #currency').on('input', applyFilters);
 
-
 fetchData()
