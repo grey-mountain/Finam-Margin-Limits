@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Test Extension Options</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="input-group p-2">
+    <input type="text" id="searchInput" class="form-control" placeholder="Найти...">
+    <select id="instrumentType" class="form-control">
+      <option value="">Все виды инструментов</option>
+    </select>
+    <select id="currency" class="form-control">
+      <option value="">Все валюты</option>
+    </select>
+    <select id="dataSource" class="form-control">
+      <option value="https://zaoik.finam.ru/documents/commissionrates/marginal/ksur/">КСУР</option>
+      <option value="https://zaoik.finam.ru/documents/commissionrates/marginal/kpur/">КПУР</option>
+    </select>
+  </div>
+  <table id="stockTable" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Торговый код</th>
+        <th>Лонг</th>
+        <th>Шорт</th>
+        <th>Вид инструмента</th>
+        <th>Валюта</th>
+        <th>Название инструмента</th>
+        <th>Эмитент</th>
+        <th>Код базового актива</th>
+        <th>ISIN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Динамическое заполнение  -->
+    </tbody>
+  </table>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/options.js"></script>
+</body>
+
+</html>
